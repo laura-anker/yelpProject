@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
 class YelpAdapter(val yelps: List<YelpBusiness>) :RecyclerView.Adapter<YelpAdapter.ViewHolder>(){
     class ViewHolder(rootLayout: View) : RecyclerView.ViewHolder(rootLayout){
@@ -35,6 +36,12 @@ class YelpAdapter(val yelps: List<YelpBusiness>) :RecyclerView.Adapter<YelpAdapt
         holder.categoryText.text= currentYelpBusiness.category
         holder.rating.text=currentYelpBusiness.rating.toString()
         Log.d("VH", "inside onBindViewHolder on position $position")
+        if (currentYelpBusiness.icon.isNotEmpty()){
+            Picasso.get().setIndicatorsEnabled(true)
+            Picasso.get()
+                .load(currentYelpBusiness.icon)
+                .into(holder.icon)
+        }
 
     }
 

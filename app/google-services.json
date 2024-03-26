@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "204528569491",
+    "project_id": "yelpfirebasespring2024-43fd1",
+    "storage_bucket": "yelpfirebasespring2024-43fd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204528569491:android:1c426f32c947d3e0f15166",
+        "android_client_info": {
+          "package_name": "com.example.countrystuff"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEgzzo7JJ-zCwLO73rpfT83yHHpA7W-rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
